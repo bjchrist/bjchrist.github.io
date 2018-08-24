@@ -31,7 +31,7 @@ export function init() {
     
     const accelx = addBubble(1, -0.8, -1.3, '#00ff00');
     const accely = addBubble(0, -0.8, -1.3, '#00ff00');
-    const accelz = addBubble(-1, -1.8, -1.8, '#00ff00');
+    const accelz = addBubble(-1.5, -1.8, -1.8, '#00ff00');
     
     // const accelx = addBubble(1, -0.5, -1.5, '#00ff00');
     // const accely = addBubble(0, -0.5, -1.5, '#00ff00');
