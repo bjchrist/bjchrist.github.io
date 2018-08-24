@@ -11,9 +11,9 @@ export function init() {
     viz = document.querySelector("#viz");
     
 //    const temperature = addBar(1, 1, '#ff0000');
-    const accelx = addBubble(1, 1, -1.9, '#ff0000');
-    const accely = addBubble(1, 1, 2, '#00ff00');
-    const accelz = addBubble(-1, 1, -2.9, '#0000ff');
+    const accelx = addBubble(1, 1, 0.9, '#ff0000');
+    const accely = addBubble(1, 1, -1, '#00ff00');
+    const accelz = addBubble(-1, 1, 0.9, '#0000ff');
 
     const scanbtn = document.querySelector("#scanbtn");
     console.log(scanbtn, thingy52);
