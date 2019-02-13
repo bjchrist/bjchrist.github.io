@@ -94,9 +94,18 @@ function connect() {
             device.addEventListener('gattserverdisconnected', onDisconnected)
             return device.gatt.connect();
         })
+        .then(services => {
+            services.forEach(service.uuid);
+            service.getCharacteristic()
+            .then(characteristics => {
+              characteristics.forEach(characteristic => {
+                  console.log(characteristic.uuid);
+              });  
+            });
+        })
         .then(server => {
             console.log('Getting Service 0xffe5 - Light control...');
-            return server.getPrimaryService(0xffe5);
+            return server.getPrimaryService(0x00FF);
         })
         .then(service => {
             console.log('Getting Characteristic 0xffe9 - Light control...');
